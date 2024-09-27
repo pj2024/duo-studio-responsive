@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duo-studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"     rel="stylesheet"/>
+    <link rel="shortcut icon" href="https://d33wubrfki0l68.cloudfront.net/439bf938233c24af021ffe6d206cd42f546e1143/ff4ed/assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    body::-webkit-scrollbar{
+        width: 3px;
+    }
+
+    body::-webkit-scrollbar-thumb{
+        background-color: #EDBFFF;
+        border-radius: 10px;
+    }
+  </style>
+  <!-- 
+  black : bg-[#0f0d0e]
+  white : bg-[#efeff1]
+  purple : bg-[#EDBFFF]
+  -->
+  <body class="font-['PP mori'] bg-[#0f0d0e] text-[#efeff1]">
+    <!-- cursor start-->
+    <div id="cursor" class="cursor fixed opacity-0 mix-blend-difference  z-10 top-[0%] left-[0%] translate-x-[-50%] translate-y-[-50%] bg-[#EDBFFF] w-[1.2vw] h-[1.2vw] rounded-full bg-cover bg-center">
+    </div>
+    <div id="img-con2" class="img-con fixed h-[100vh] w-[45vw] z-10 top-[0%] left-[0%] translate-x-[-50%] translate-y-[-50%]  bg-rose-400 rounded hidden" >
+    </div>
+     <!--cursor end -->
+    <!-- nav start -->
+    <nav class="w-full h-[10vh] top-0 left-0 bg-transparant z-10 fixed px-[4vw] py-2 flex items-center justify-between mix-blend-difference">
+      <div class="logo">
+        <img src="https://d33wubrfki0l68.cloudfront.net/439bf938233c24af021ffe6d206cd42f546e1143/ff4ed/assets/logo.svg" class="w-[8vw] md:w-[2.5vw] " alt="logo">
+      </div>
+      <div class="menu-opt text-[#efeff1] uppercase font-['PP mori'] hidden md:flex font-semibold text-[1.2vw] gap-4 h-[2vw] overflow-hidden my-3">
+          <div class="group overflow-hidden opt-con cursor-pointer relative 
+          after:content-[''] after:absolute after:bg-[#efeff1]
+          after:w-[100%] after:h-[2px] after:top-[89%] after:left-[0%] after:translate-x-[-100%] hover:after:translate-x-[0%] after:duration-200">
+              <h2 class="group-hover:translate-y-[-100%] duration-200">home</h2>
+              <h2 class="group-hover:translate-y-[-100%] duration-200">home</h2>
+          </div>
+          <div class="group overflow-hidden opt-con cursor-pointer relative 
+          after:content-[''] after:absolute after:bg-[#efeff1]
+          after:w-[100%] after:h-[2px] after:top-[89%] after:left-[0%] after:translate-x-[-100%] hover:after:translate-x-[0%] after:duration-200">
+              <h2 class="group-hover:translate-y-[-100%] duration-200">work</h2>
+              <h2 class="group-hover:translate-y-[-100%] duration-200">work</h2>
+          </div>
+          <div class="group overflow-hidden opt-con cursor-pointer relative 
+          after:content-[''] after:absolute after:bg-[#efeff1]
+          after:w-[100%] after:h-[2px] after:top-[89%] after:left-[0%] after:translate-x-[-100%] hover:after:translate-x-[0%] after:duration-200">
+              <h2 class="group-hover:translate-y-[-100%] duration-200">studio</h2>
+              <h2 class="group-hover:translate-y-[-100%] duration-200">studio</h2>
+          </div>
+          <div class="group overflow-hidden opt-con cursor-pointer relative 
+          after:content-[''] after:absolute after:bg-[#efeff1]
+          after:w-[100%] after:h-[2px] after:top-[89%] after:left-[0%] after:translate-x-[-110%] hover:after:translate-x-[0%] after:duration-200">
+              <h2 class="group-hover:translate-y-[-100%] duration-200">contact</h2>
+              <h2 class="group-hover:translate-y-[-100%] duration-200">contact</h2>
+          </div>
+      </div>
+      <div class="hidden md:block white-ball my-3 bg-[#efeff1] h-3 w-3 rounded-full"></div>
+      <div class="menu md:hidden">
+        <i class="ri-menu-3-line text-[6vw] font-medium text-[#efeff1]"></i>
+      </div>
+    </nav>
+    <!-- nav end -->
+     <!-- app start -->
+    <div id="app" class="">
+        <!-- page 1 start -->
+        <div class="page1 min-h-screen w-full py-[8vh] "> 
+            <!-- headline text start -->
+          <div class="headline-text-con w-full h-fit mt-[20vh] md:text-[7vw] text-[10vw]  font-medium leading-[8vw] px-[6vw] md:px-[8vw]">
+                <div class="heading-con w-fit h-fit overflow-hidden ">
+                    <h1 id="heading-t1" class="heading-t text-left overflow-hidden md:h-[9.2vw] h-[12vw]">Digitally Crafted</h1>
+                </div>
+                <div class="heading-con w-[100%] h-fit overflow-hidden text-right">
+                    <h2  id="heading-t2" class="heading-t text-right overflow-hidden md:h-[9.2vw] h-[12vw]">Brand Experiences</h2>
+                </div>
+          </div>
+          <!-- headline text end -->
+
+          <!-- video con start -->
+          <div id="video-con" class="video-con md:w-[45%] w-[60%] md:h-[120vh] h-[100vh] relative  mx-auto mt-[12vh]">
+              <div class="video-text-con w-[100%] h-fit flex aline-center justify-between uppercase md:text-[1.2vw] text-[2vw] font-medium">
+                  <h5>A creative degital agency</h5>
+                  <h5>Based in washington.dc</h5>
+                  <h4 id="img1crsr" class="text-[1vw] opacity-0 fixed text-[#000000] uppercase px-3 py-1 top-0 left-0 bg-[#EDBFFF] rounded-full mix-blend-difference ">Sound on</h4>
+              </div>
+            <video src="./assets/videoplayback.mp4" autoplay muted loop class="w-[100%] h-[100%] object-cover"></video>
+          </div>
+          <!-- video con end -->
+        </div>
+        <!-- page 1 end -->
+        <!-- page 2 start -->
+        <div class="page2 h-screen  w-full min-h-screen">
+          <h2 class="py-[5vw] px-[5vw] text-[10vw] font-medium">We are Duo Studio,</h2>
+          <div class=" page2-con px-[5vw]  md:flex aline-center justify-between w-full md:h-[55vh] h-fit mt-[5vh] md:mt-[10vh] border-b-[1px] border-[#0f0d0e]">
+              <p class="md:w-[38%] w-full md:text-[3.5vw] text-[7vw]">A CREATIVE
+                  COLLECTIVE
+                  MADE TO UNLOCK
+                  YOUR BRAND'S
+                  POTENTIAL</p>
+              <p class="md:w-[30%] w-full md:text-[1.2vw] text-[3.vw] mt-[5vw] mb-[5vw] md:mt-0 text-center">
+                  We weave together bold
+                  strategy and creative execution
+                  to produce thought-provoking
+                  digital experiences. We take a
+                  highly personalized approach to
+                  delivering branding, web
+                  design, and content marketing
+                  solutions. Born in the DC area -
+                  now serving clients worldwide.
+                  <br>
+                  <button class="w-full mt-4 md:mt-2 px-3 py-1 bg-[#e8bdfb] rounded-full text-[#0f0d0e] uppercase md:text-[1vw] text-[3vw]">About us</button>
+              </p>
+          </div>
+        </div>
+        <!-- page 2 end -->
+
+        <!-- page 3 start -->
+        <div class="page3 w-full min-h-screen border-b-[1px] border-[#0f0d0e] mt-0 md:mt-[10vh]">
+          <h2 class="capitalize text-[12vw] md:text-[8vw] font-medium py-[3vw] px-[5vw]">selected work</h2>
+
+          <h4 id="img2crsr" class="text-[1vw] opacity-0 fixed text-[#000000] uppercase px-3 py-1 top-0 left-0 bg-[#EDBFFF] rounded-full mix-blend-difference ">view</h4>
+          <div class="page3-con mt-0 md:mt-3 w-full h-fit md:h-[90vh] pr-0 md:pr-[4vw] flex-col md:flex-row flex justify-between gap-[10vw] anim">
+              <div class="left-con con w-full md:w-[55%] h-[85%] mt-0 md:mt-[12vh]">
+                  <img src="https://d33wubrfki0l68.cloudfront.net/aa3d2ff66de5f16336bd94fd68c3c2ce61e29f68/d5064/assets/home/home-casestudy-mgny.webp" class="object-cover" alt="">
+                  <div class="text-con">
+                      <p class="text-right md:text-[1vw] text-[3vw] font-medium"><span class="md:text-[1.5vw] text-[4vw] font-semibold mr-3">MGNY</span> Strategy, Website, Illustration</p>
+                  </div>
+              </div>
+              <div class="right-con con w-full md:w-[40%] h-[60%]">  
+                      <video src="https://d33wubrfki0l68.cloudfront.net/a13ea7c2ca2f38134748966280e54af4340ce821/f976d/assets/home/projects_madegood-reduced.mp4" loop muted autoplay class="object-cover"></video>
+                  <div class="text-con">
+                      <p class="text-left md:text-[1vw] text-[3vw] font-medium"><span class="md:text-[1.5vw] text-[4vw] font-semibold mr-3">MadeGood</span>  Strategy, Website</p>
+                  </div>
+              </div>
+          </div> 
+          
+          <div class="page3-con mt-3 w-full h-fit md:h-[90vh] pr-0 md:pr-[4vw] flex-col md:flex-row flex justify-between gap-[10vw]">
+              <div class="left-con con w-full md:w-[55%] h-[85%] mt-0 md:mt-[12vh]">
+                  <img src="https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="object-cover" alt="">
+                  <div class="text-con">
+                      <p class="text-right md:text-[1vw] text-[3vw] font-medium"><span class="md:text-[1.5vw] text-[4vw] font-semibold mr-3">MGNY</span> Strategy, Website, Illustration</p>
+                  </div>
+              </div>
+              <div class="right-con con w-full md:w-[40%] h-[60%]">  
+                      <img src="https://images.unsplash.com/photo-1466428996289-fb355538da1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  class="object-cover"></img>
+                  <div class="text-con">
+                      <p class="text-left md:text-[1vw] text-[3vw] font-medium"><span class="md:text-[1.5vw] text-[4vw] font-semibold mr-3">MadeGood</span>  Strategy, Website</p>
+                  </div>
+              </div>
+          </div> 
+          
+          <div class="page3-con2 w-full h-[30vh] px-[4vw] mt-0 flex items-center justify-between">
+              <h4 class="uppercase w-fit h-fit"><a href="#" id="viewProjects" class="md:text-[4vw] text-[6vw] font-[500]">View all projects</a></h4>
+              <div class="gola md:w-[10vw] md:h-[10vw] w-[20vw] h-[20vw] bg-[#e8bdfb] rounded-full grid place-items-center md:text-[.8vw] text-[3.2vw] uppercase text-[#0f0d0e] font-semibold duration-200 hover:text-[#efeff1] hover:bg-[#0f0d0e] cursor-pointer ">Discover</div>
+          </div>
+          
+        </div>
+        <!-- page 3 end -->
+
+        <!-- page 4 start -->
+        <div class="page4 w-full h-[80vh] md:h-screen py-[10vw] px-[8vw] border-b-[1px] border-[#878585] flex md:block flex-col justify-center items-center gap-[3vw]">
+          <h4 class="text-center uppercase md:text-[1vw] text-[3.2vw] font-semibold">DESIGNED TO BRING OUT <br>
+              the truth of your brain
+         </h4>
+
+          <div class="group page4-in-con relative h-[10vh] md:h-[18vh] mt-2 flex justify-center">
+              <div class="text-con  w-fit h-[100%] flex flex-col cursor-pointer overflow-hidden items-center ">
+                  <h3 class="pt-0 md:text-[6.5vw] text-[10vw] font-semibold  group-hover:translate-y-[-100%] duration-200 leading-none h-[100%] shrink-0 z-10">Strategy</h3>
+                  <h3 class="pt-0 md:text-[6.5vw] text-[10vw] font-semibold  group-hover:translate-y-[-100%] duration-200 leading-none h-[100%] shrink-0 text-[#e8bdfb] z-10">Strategy</h3>
+              </div>
+
+              <img src="https://images.unsplash.com/photo-1668158873375-fe7527bde774?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute md:left-[0%] object-cover md:w-[24vw] md:h-[30vw] w-[30vw] h-[40vw] md:top-[-50%] top-[-200%]  left-[-70%] opacity-0 group-hover:opacity-100 duration-200 scale-0 group-hover:scale-100 rounded" alt="">
+              <img src="https://images.unsplash.com/photo-1719937050814-72892488f741?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " class="absolute md:right-[-5%] right-[-70%] object-cover md:w-[30vw] md:h-[20vw] w-[40vw] h-[25vw] md:bottom-[-30%] bottom-[-200%] opacity-0 group-hover:opacity-100 duration-200 scale-0 group-hover:scale-100 rounded" alt="">
+          </div>
+
+          <div class="group page4-in-con relative h-[10vh] md:h-[18vh] mt-2 flex justify-center">
+              <div class="text-con  w-fit h-[100%] flex flex-col cursor-pointer overflow-hidden items-center ">
+                  <h3 class="pt-0 md:text-[6.5vw] text-[10vw] font-semibold  group-hover:translate-y-[-100%] duration-200 leading-none h-[100%] shrink-0 z-10">Identity</h3>
+                  <h3 class="pt-0 md:text-[6.5vw] text-[10vw] font-semibold  group-hover:translate-y-[-100%] duration-200 leading-none h-[100%] shrink-0 text-[#e8bdfb] z-10">Identity</h3>
+              </div>
+
+              <img src="https://images.unsplash.com/photo-1703145493157-826fde2df65a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute md:right-[-3%] right-[-70%] object-cover md:w-[25vw] md:h-[28vw] w-[40vw] h-[50vw] md:top-[-50%] top-[-400%] opacity-0 group-hover:opacity-100 duration-200 scale-0 group-hover:scale-100 rounded" alt="">
+              <img src="https://images.unsplash.com/photo-1701680842563-64402cf27368?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute md:left-[-5%] left-[-75%] object-cover md:w-[30vw] md:h-[20vw] w-[40vw] h-[50vw] md:bottom-[30%] bottom-[-200%] opacity-0 group-hover:opacity-100 duration-200 scale-0 group-hover:scale-100 rounded" alt="">
+          </div>
+
+          <div class="group page4-in-con relative h-[10vh] md:h-[18vh] mt-2 flex justify-center">
+              <div class="text-con  w-fit h-[100%] flex flex-col cursor-pointer overflow-hidden items-center ">
+                  <h3 class="pt-0 md:text-[6.5vw] text-[10vw] font-semibold  group-hover:translate-y-[-100%] duration-200 leading-none h-[100%] shrink-0 z-10">Experiences</h3>
+                  <h3 class="pt-0 md:text-[6.5vw] text-[10vw] font-semibold  group-hover:translate-y-[-100%] duration-200 leading-none h-[100%] shrink-0 text-[#e8bdfb] z-10">Experiences</h3>
+              </div>
+
+              <img src="https://images.unsplash.com/photo-1708417015900-00e230b3b6f5?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " class="absolute left-[-30%] md:left-[0%] object-cover md:w-[24vw] md:h-[28vw] w-[40vw] h-[45vw] top-[-400%] md:top-[-300%] opacity-0 group-hover:opacity-100 duration-200 scale-0 group-hover:scale-100 rounded" alt="">
+              <img src="https://images.unsplash.com/photo-1716882173326-04d822f142a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="absolute right-[-30%] md:right-[-5%] object-cover md:w-[27vw] md:h-[20vw] w-[45vw] h-[30vw] md:bottom-[-20%] bottom-[-150%] opacity-0 group-hover:opacity-100 duration-200 scale-0 group-hover:scale-100 rounded" alt="">
+          </div>
+        </div>
+        <!-- page 4 end -->
+
+        <!-- page 5 start -->
+        <div class="page5 cursor-none w-full h-screen bg-[#0f0d0e] text-[#efeff1] md:py-[8vw] py-0 md:px-[5vw] px-[5vw]">
+          <div class="flex items-center justify-between w-full px-3 mb-3">
+              <div class="group relative md:h-fit w-fit leading-none cursor-pointer overflow-hidden">
+                      <div class="flex gap-3 uppercase md:text-[3.5vw] text-[6vw]">
+                          <h3 class="text-[#e8bdfb] group-hover:translate-y-[100%] duration-200">mention</h3>
+                          <h2 class="group-hover:translate-y-[-100%] duration-200">clients</h2>
+                      </div>
+                      <div class="flex gap-3 md:text-[3.5vw] text-[6vw] uppercase ">
+                          <h3 class="absolute translate-y-[-200%] group-hover:translate-y-[-100%] duration-200" >mention</h3>
+                          <h2 class="text-[#e8bdfb] absolute right-[0%] group-hover:translate-y-[-100%] duration-200">clients</h2>
+                      </div>
+              </div>
+              <div class="uppercase md:text-[1.2vw] text-[3vw]">
+                  view clients
+              </div>
+          </div>
+          
+          <div id="box-con" class="box-con relative w-full h-fit">
+              <div class="box md:text-[1.1vw] text-[3vw] opacity-40 w-full h-fit px-2 md:py-5 py-2 border-t-[1.5px] border-b-[0px] hover:border-b-[1.5px] hover:opacity-100 duration-200 border-[#878585] flex items-center justify-between border-b-opacity-0 cursor-pointer" data-image="https://images.unsplash.com/photo-1725113114049-31121918636c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                      <div class="md:text-[1.8vw] text-[4vw] ">
+                          varizon
+                      </div>
+                      <div class="w-[30%] flex items-center justify-between" >
+                          <h3>Small buisiness feturs</h3>
+                          <h3>2021</h3>
+                      </div>
+              </div>
+              <div class="box md:text-[1.1vw] text-[3vw] opacity-40 w-full h-fit px-2  md:py-5 py-2 border-t-[1.5px] border-b-[0px] hover:border-b-[1.5px] hover:opacity-100 duration-200 border-[#878585] flex items-center justify-between border-b-opacity-0 cursor-pointer" data-image="https://images.unsplash.com/photo-1725113114015-7d65ebd4f2bb?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <div class="md:text-[1.8vw] text-[4vw]">
+                      varizon
+                  </div>
+                  <div class="w-[30%] flex items-center justify-between" >
+                      <h3>Small buisiness feturs</h3>
+                      <h3>2021</h3>
+                  </div>
+              </div>
+
+              <div class="box md:text-[1.1vw] text-[3vw] opacity-40 w-full h-fit px-2  md:py-5 py-2 border-t-[1.5px] border-b-[0px] hover:border-b-[1.5px] hover:opacity-100 duration-200 border-[#878585] flex items-center justify-between border-b-opacity-0 cursor-pointer" data-image="https://images.unsplash.com/photo-1662652610624-4c12ff68385b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <div class="md:text-[1.8vw] text-[4vw] ">
+                      varizon
+                  </div>
+                  <div class="w-[30%] flex items-center justify-between" >
+                      <h3>Small buisiness feturs</h3>
+                      <h3>2021</h3>
+                  </div>
+              </div>
+
+
+              <div class="box md:text-[1.1vw] text-[3vw] opacity-40 w-full h-fit px-2  md:py-5 py-2 border-t-[1.5px] border-b-[0px] hover:border-b-[1.5px] hover:opacity-100 duration-200 border-[#878585] flex items-center justify-between border-b-opacity-0 cursor-pointer" data-image="https://images.unsplash.com/photo-1658988958556-72342117610f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <div class="md:text-[1.8vw] text-[4vw] ">
+                      varizon
+                  </div>
+                  <div class="w-[30%] flex items-center justify-between" >
+                      <h3>Small buisiness feturs</h3>
+                      <h3>2021</h3>
+                  </div>
+              </div>
+
+              <div class="box md:text-[1.1vw] text-[3vw] opacity-40 w-full h-fit px-2  md:py-5 py-2 border-t-[1.5px] border-b-[0px] hover:border-b-[1.5px] hover:opacity-100 duration-200 border-[#878585] flex items-center justify-between border-b-opacity-0 cursor-pointer" data-image="https://images.unsplash.com/photo-1682845737939-a12169ff13cf?q=80&w=1798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <div class="md:text-[1.8vw] text-[4vw] ">
+                      varizon
+                  </div>
+                  <div class="w-[30%] flex items-center justify-between" >
+                      <h3>Small buisiness feturs</h3>
+                      <h3>2021</h3>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+        <!-- page 5 end -->
+
+
+        <!-- footer start -->
+        <footer class="w-full md:h-screen h-[50vh] px-[5vw] bg-[#e8bdfb] md:pt-[20vh] pt-[10vh] text-[#0f0d0e]">
+          <div class="flex w-full h-fit justify-between items-center">
+              <h4 class="md:text-[8vw] text-[10vw] font-semibold w-full">Start a project</h4>
+              <div class="gola md:w-[10vw] md:h-[9vw] w-[30vw] h-[22vw] bg-[#efeff1] rounded-full flex items-center justify-center md:text-[.8vw] text-[2.8vw] uppercase text-[#0f0d0e] font-semibold duration-200 hover:text-[#efeff1] hover:bg-[#0f0d0e] cursor-pointer ">get in touch</div>
+          </div>
+          <div class="md:text-[1.5vw] text-[3vw] md:mt-[20vh] mt-[10vh]">
+              Create an experience that's as remarkable as your business.
+          </div>
+        </footer>
+      <!-- footer end -->
+    </div>
+    <!-- app end -->
+    
+
+    
+    <!-- lenis js cdn -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scrollTrigger cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- script -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
