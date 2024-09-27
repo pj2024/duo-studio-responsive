@@ -147,8 +147,8 @@ function page1loadAnim() {
             trigger:"#heading-t1",
             scrollers:"#main",
             // markers:true,
-            start:"top 35%",
-            end:"top 10%",
+            start:"top 30%",
+            end:"top 0%",
             scrub:2
         }
     })
